@@ -12,7 +12,6 @@ keywords = [
     "svg",
     "ascii",
     "art",
-    "typst",
     "wasm",
     "rust",
     "svgbob",
@@ -21,3 +20,4 @@ keywords = [
     "graph",
     "draw",
 ]
+exclude = ["examples"]
