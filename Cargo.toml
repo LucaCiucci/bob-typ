@@ -1,5 +1,5 @@
 [package]
-name = "bob-draw-typ"
+name = "bob-typ"
 version = "0.1.0"
 edition = "2021"
 
@@ -11,8 +11,8 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-svgbob = "0.7.2"
-wasm-minimal-protocol = { git = "https://github.com/astrale-sharp/wasm-minimal-protocol" }
+svgbob = "=0.7.2"
+wasm-minimal-protocol = { git = "https://github.com/astrale-sharp/wasm-minimal-protocol", tag = "wasi-stub-0.2.0" }
 
 [profile.release]
 lto = true          # Enable link-time optimization
