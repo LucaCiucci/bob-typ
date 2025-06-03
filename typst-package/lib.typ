@@ -40,9 +40,9 @@
     art,
     ..args,
 ) = {
-    if type(art) == "string" {
-        image.decode(bob2svg(art), format: "svg", ..args)
+    if type(art) == str {
+        image(bob2svg(art), format: "svg", ..args)
     } else if art.text != none {
-        image.decode(bob2svg(art.text), format: "svg", ..args)
+        image(bob2svg(art.text), format: "svg", ..args)
     }
 }
